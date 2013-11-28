@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Chupa Talk | Speak Like Chupa</title>
+
+<script type="text/javascript" src ="js/provincias-cantones.js"></script>
+<script type="text/javascript">
+	
+	function validarCampos()
+	{
+	
+  	var x=document.forms["formulario"]["provincia"].value;
+        if (x==null || x=="")
+  {
+  alert("La Provincia no puede quedar sin seleccionarse");
+  return false;
+  }
+  	var x=document.forms["formulario"]["lugar"].value;
+        if (x==null || x=="")
+  {
+  alert("El Lugar no puede quedar sin seleccionarse");
+  return false;
+  }
+	}
+	
+</script>
+</head>
+
+<body id="body">
+
+<header></header>
+<form name="formulario"  onsubmit="return validarCampos()">
+
+Provincia<br />
+<select onchange="print_canton('canton',this.selectedIndex);" id="provincia" class="ed" name ="provincia"></select>
+<br />
+Canton<br />
+<select name ="lugar" id ="canton" class="ed"></select>
+<script language="javascript">print_provincia("provincia");</script>
+<br />
+<br>
+<input type="submit" name="Submit" value="Aceptar"/>
+
+</form>
+
+</body>
+</html>
