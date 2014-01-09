@@ -2,21 +2,6 @@
 	
 	*	Modificado por: Magdiel Cordero
 
-	*	Description:
-	*	Inserts Countries and/or States as Dropdown List
-	*	How to Use:
-
-		En la seccion del head colocar lo siguiente:
-		<script type= "text/javascript" src = "provincias-cantones.js"></script>
-		In Body Section:
-		Select Country:   <select onchange="print_state('state',this.selectedIndex);" id="country" name ="country"></select>
-		<br />
-		City/District/State: <select name ="state" id ="state"></select>
-		<script language="javascript">print_country("country");</script>	
-
-	*
-	*	License: OpenSource, Permission for modificatin Granted, KEEP AUTHOR INFORMATION INTACT
-	*	Aurthor's Website: http://shafiul.progmaatic.com
 	*
 */
 
